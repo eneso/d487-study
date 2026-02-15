@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D487 Security Study - Multiple Choice Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>D487 Security Study Guide</h1>
+            <p>Interactive Multiple Choice Questions</p>
+        </header>
+
+        <nav class="lesson-nav">
+            <button class="lesson-btn active" data-lesson="all">All Lessons</button>
+            <button class="lesson-btn" data-lesson="1">Lesson 1</button>
+            <button class="lesson-btn" data-lesson="2">Lesson 2</button>
+            <button class="lesson-btn" data-lesson="3">Lesson 3</button>
+            <button class="lesson-btn" data-lesson="4">Lesson 4</button>
+            <button class="lesson-btn" data-lesson="5">Lesson 5</button>
+            <button class="lesson-btn" data-lesson="6">Lesson 6</button>
+            <button class="lesson-btn" data-lesson="7">Lesson 7</button>
+            <button class="lesson-btn" data-lesson="8">Lesson 8</button>
+            <button class="lesson-btn" data-lesson="9">Lesson 9</button>
+            <button class="lesson-btn" data-lesson="10">Lesson 10</button>
+        </nav>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Progress:</span>
+                <span class="stat-value"><span id="answered">0</span>/<span id="total">200</span></span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Score:</span>
+                <span class="stat-value"><span id="score">0</span>%</span>
+            </div>
+            <button id="resetBtn" class="reset-btn">Reset All</button>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+            <!-- Questions will be loaded here -->
+        </div>
+
+        <div class="navigation-buttons">
+            <button id="prevBtn" class="nav-btn" disabled>← Previous</button>
+            <span id="currentQuestion">Question 1 of 200</span>
+            <button id="evaluateBtn" class="nav-btn evaluate-btn">Evaluate</button>
+            <button id="nextBtn" class="nav-btn">Next →</button>
+        </div>
+
+        <button id="submitBtn" class="submit-btn">Submit Answers</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
